@@ -1,14 +1,14 @@
 "use strict";
 // ------- Tipo: Array -------
 // Explicito
-var users;
+let users;
 users = ['luixaviles', 'paparazzi', 'lensqueen'];
 // users = [1, true, 'test']; // --> Error
 // Inferido
-var otherUsers = ['luixaviles', 'paparazzi', 'lensqueen'];
+let otherUsers = ['luixaviles', 'paparazzi', 'lensqueen'];
 // otherUsers = [1, true, 'test']; // --> Error
 // Array<tipoDato>
-var pictureTitles;
+let pictureTitles;
 pictureTitles = ['Favorite Sunset', 'Vacation Time', 'Landscape'];
 // Accediendo a los valores en un Array
 console.log('first user : ', users[0]); // --> users[indice]: luixaviles

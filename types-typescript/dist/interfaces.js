@@ -10,9 +10,9 @@ var PhotoOrientation;
     PhotoOrientation[PhotoOrientation["Panorama"] = 3] = "Panorama";
 })(PhotoOrientation || (PhotoOrientation = {}));
 function showPicture(picture) {
-    console.log("[title: " + picture.title + ", date: " + picture.date + ", orientation: " + picture.orientation + "]");
+    console.log(`[title: ${picture.title}, date: ${picture.date}, orientation: ${picture.orientation}]`);
 }
-var myPic = {
+let myPic = {
     title: 'Test title',
     date: '2020-03',
     orientation: PhotoOrientation.Landscape
@@ -24,7 +24,7 @@ showPicture({
     orientation: PhotoOrientation.Portrait,
 }); // objecto anonimo
 function generatePicture(config) {
-    var pic = { title: 'Default', date: '2020-03' };
+    const pic = { title: 'Default', date: '2020-03' };
     if (config.title) {
         pic.title = config.title;
     }
@@ -33,13 +33,13 @@ function generatePicture(config) {
     }
     return pic;
 }
-var picture = generatePicture({});
+let picture = generatePicture({});
 console.log('picture : ', picture);
 picture = generatePicture({ title: 'Travel Pic' });
 console.log('picture : ', picture);
 picture = generatePicture({ title: 'Travel Pic', date: '2012-05' });
 console.log('picture : ', picture);
-var user;
+let user;
 user = { id: 10, username: 'luixaviles', isPro: true };
 console.log('user : ', user);
 user.username = 'paparazzi';

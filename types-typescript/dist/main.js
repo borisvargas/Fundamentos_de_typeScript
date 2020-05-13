@@ -2,24 +2,30 @@
 // archivo principal
 console.log('Hola Platzi world!');
 // Number
-var phone; // Tipo Explicito
+let phone; // Tipo Explicito
 // phone = '+367128815'; --> Error de tipo
 phone = 924234669;
 // Number
-var phoneMovil = 637128815; // Tipo Inferido
+let phoneMovil = 637128815; // Tipo Inferido
 // let phoneMovil = true; --> Error esta definido antes
-var hex = 0xf00d;
-var binary = 5;
-var octal = 484;
+let hex = 0xf00d;
+let binary = 0b101;
+let octal = 0o744;
 // Type: Boolean
-var isPro;
+let isPro;
 isPro = true;
 // isPro = 1; --> Error
 // String
-var username = 'anbreaker';
+let username = 'anbreaker';
 username = 'Javier';
 // username = true; --> Error
 // Template String with use of back-tick ``
-var userInfo;
-userInfo = "\n    User info:\n    username: " + username + "\n    firtsname: " + (username + ' anbreaker') + "\n    phone: " + phone + "\n    isPro: " + isPro + "\n";
+let userInfo;
+userInfo = `
+    User info:
+    username: ${username}
+    firtsname: ${username + ' anbreaker'}
+    phone: ${phone}
+    isPro: ${isPro}
+`;
 console.log('userInfo', userInfo);
